@@ -1,6 +1,7 @@
 html{
     height: 100%;
     width: 100%;
+    background-color: white;
 }
 
 .fade-out{
@@ -34,6 +35,14 @@ h1{
     
 }
 
+.page-content-title{
+    margin: 0px;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 50px;
+    color: rgb(44, 44, 44);
+}
+
 .page-content{
     color: rgb(20,20,20);
     background-color: white;
@@ -57,8 +66,9 @@ h1{
 }
 
 .projects{
-    justify-content: center;
+    justify-content: space-evenly;
     position: absolute;
+    display: flex;
 }
 
 .projects li {
@@ -66,7 +76,100 @@ h1{
     padding: 0px;
     list-style: none;
     display: inline-block;
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 0px 4px 5px rgb(48, 48, 48);
+    height: 200px;
+    margin-top: 0px;
+    padding: 20px;
+    position: relative;
+
+    
 }
+
+.project-card{
+    border-radius: 10px;
+    box-shadow: 0px 4px 5px rgb(92, 92, 92);
+    height: 180px;
+    padding: 0;
+    margin: 15px;
+    transition: all .5s ease-in-out;
+    /* transform: translate(-50%, 50%); */
+    /* margin-top: 50% */
+    /* filter: grayscale(50%); */
+    filter: contrast(80%);
+    filter: blur(2px);
+    position: relative;
+}
+
+.project-card:hover{
+    height: 185px;
+    position: relative;
+    bottom: -1px;
+    filter: grayscale(0%);
+    filter: contrast(120%);
+}
+
+/* .project-card:hover::before{
+    
+} */
+
+.pc-container:hover::after{
+    opacity: 1;
+    height: 185px;
+}
+
+.pc-container{
+    text-decoration: none;
+}
+
+.pc-container::after{
+    content: '';
+    position: relative;
+    display: block;
+    height: 180px;
+    width: 92%;
+    background: rgba(0, 255, 213, 0.211);
+    border-radius: 10px;
+    /* position: absolute; */
+    left: 50%;
+    /* bottom: 25px; */
+    top: 0px;
+    opacity: 0;
+    transform: translate(-50%, -146%);
+    transition: all ease-in-out .25s;
+    pointer-events: none;
+}
+
+p.project-card-title{
+    text-align: center;
+    width: 100%;
+    color: gray;
+    font-family: 'QuickSand';
+    text-decoration: none;
+    font-weight: bold;
+    opacity: 1;
+    font-size: 20px;
+    transition: all ease-in-out .25s;
+}
+
+p.project-card-title:visited{
+    text-decoration: none;
+}
+
+p.project-card-title:hover{
+    opacity: 0.5;
+}
+
+/* .project-card::before{
+    content: '';
+    display: block;
+    height: 100%;
+    width: 100%;
+    background: hotpink;
+    background-color: hotpink;
+    position: absolute;
+    transform: translate(-50%, 50%);
+} */
 
 .logo-icon{
     height:25px;
