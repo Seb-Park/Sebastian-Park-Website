@@ -2,6 +2,8 @@ html{
     height: 100%;
     width: 100%;
     background-color: white;
+    overflow-x: hidden;
+
 }
 
 .fade-out{
@@ -36,7 +38,7 @@ h1{
 }
 
 .page-content-title{
-    margin: 0px;
+    margin: 0px 0px 30px 0px;
     text-align: center;
     font-family: 'Open Sans', sans-serif;
     font-size: 50px;
@@ -49,7 +51,7 @@ h1{
     /* margin:100px; */
     margin-top: 0;
     padding-top:0;
-    height: 50%;
+    height: 70%;
     /* width:100%; */
     /* background-image: linear-gradient(black,rgb(15, 15, 15)); */
     background-size: cover;
@@ -67,31 +69,18 @@ h1{
 
 .projects{
     justify-content: space-evenly;
-    position: absolute;
-    display: flex;
-}
-
-.projects li {
-    margin: 0px;
-    padding: 0px;
-    list-style: none;
-    display: inline-block;
-    border-radius: 5px 5px 5px 5px;
-    box-shadow: 0px 4px 5px rgb(48, 48, 48);
-    height: 200px;
-    margin-top: 0px;
-    padding: 20px;
     position: relative;
-
-    
+    display: flex;
+    margin: 0;
+    padding: 0;
 }
 
 .project-card{
     border-radius: 10px;
     box-shadow: 0px 4px 5px rgb(92, 92, 92);
-    height: 180px;
+    height: 170px;
     padding: 0;
-    margin: 15px;
+    margin: 20px;
     transition: all .5s ease-in-out;
     /* transform: translate(-50%, 50%); */
     /* margin-top: 50% */
@@ -102,24 +91,27 @@ h1{
 }
 
 .project-card:hover{
-    height: 185px;
+    /* height: 185px; */
     position: relative;
     bottom: -1px;
     filter: grayscale(0%);
     filter: contrast(120%);
+    transform: scale(1.1,1.1);
 }
 
 /* .project-card:hover::before{
     
 } */
 
-.pc-container:hover::after{
+/* .pc-container:hover::after{
     opacity: 1;
     height: 185px;
-}
+} 
 
 .pc-container{
     text-decoration: none;
+    margin: 0;
+    padding: 0;
 }
 
 .pc-container::after{
@@ -128,17 +120,15 @@ h1{
     display: block;
     height: 180px;
     width: 92%;
-    background: rgba(0, 255, 213, 0.211);
+    background: rgba(0, 255, 213, 0);
     border-radius: 10px;
-    /* position: absolute; */
     left: 50%;
-    /* bottom: 25px; */
     top: 0px;
     opacity: 0;
     transform: translate(-50%, -146%);
     transition: all ease-in-out .25s;
     pointer-events: none;
-}
+}*/
 
 p.project-card-title{
     text-align: center;
@@ -149,7 +139,10 @@ p.project-card-title{
     font-weight: bold;
     opacity: 1;
     font-size: 20px;
+    /* height: ; */
     transition: all ease-in-out .25s;
+    margin: 0;
+    padding: 0;
 }
 
 p.project-card-title:visited{
