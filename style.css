@@ -258,7 +258,14 @@ p.project-card-title:hover{
     /* z-index: -100;
     height: 100%;
     background-color: hotpink;*/
-    background-size: cover;
+    background-size: 105%;
+    /* background-repeat: no-repeat; */
+    /* background-size: 200px 200px; */
+    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 2s; /* Firefox < 16 */
+        -ms-animation: fadein 2s; /* Internet Explorer */
+         -o-animation: fadein 2s; /* Opera < 12.1 */
+            animation: fadein 2s;
 }
 .bg-image{
     width:100%;
@@ -607,4 +614,92 @@ nav a::before{
 @-o-keyframes fadeout {
     from { opacity: 1; }
     to   { opacity: 0; }
+}
+
+  @keyframes fadeout {
+    from { opacity: 1; }
+    to   { opacity: 0; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadeout {
+    from { opacity: 1; }
+    to   { opacity: 0; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadeout {
+    from { opacity: 1; }
+    to   { opacity: 0; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadeout {
+    from { opacity: 1; }
+    to   { opacity: 0; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadeout {
+    from { opacity: 1; }
+    to   { opacity: 0; }
+}
+
+@keyframes fadein {
+    from {
+        background-size: 100%; 
+        background-origin: padding-box;
+        background-position: center;
+        opacity: 0; }
+    to   { 
+        background-size: 105%;
+        opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from {
+        background-size: 100%; 
+        background-origin: padding-box;
+        background-position: center;
+        opacity: 0; }
+    to   { 
+        background-size: 105%;
+        opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from {
+        background-size: 100%; 
+        background-origin: padding-box;
+        background-position: center;
+        opacity: 0; }
+    to   { 
+        background-size: 105%;
+        opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from {
+        background-size: 100%; 
+        background-origin: padding-box;
+        background-position: center;
+        opacity: 0; }
+    to   { 
+        background-size: 105%;
+        opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+    from {
+        background-size: 100%; 
+        background-origin: padding-box;
+        background-position: center;
+        opacity: 0; }
+    to   { 
+        background-size: 105%;
+        opacity: 1; }
 }
