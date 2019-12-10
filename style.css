@@ -100,7 +100,7 @@ h1{
     position: relative;
     bottom: -1px;
     filter: grayscale(0%);
-    filter: contrast(120%);
+    filter: contrast(100%);
     transform: scale(1.1,1.1);
 }
 
