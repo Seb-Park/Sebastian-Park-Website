@@ -12,6 +12,11 @@ if(isset($_POST['submit'])){
     mail($emailTo, "New Message", $txt, $headers);
 
     header("Location: index.html");
+    echo("<h1>Form sent!</h1> \n Thanks for your feedback!");
 }
+else{
+    echo("<h1>Order 66 Error</h1>\n Form not sent...");
+}
+echo("\n php WORKS!");
 
 ?>
