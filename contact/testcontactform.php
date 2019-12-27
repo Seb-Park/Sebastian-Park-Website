@@ -8,7 +8,7 @@ $headers = 'From:' . $sender;
 
 if (mail($recipient, $subject, $message, $headers))
 {
-    echo "Message accepted";
+    echo "Message accepted\n";
 }
 else
 {
