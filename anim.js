@@ -1,11 +1,12 @@
 
 // document.body.style.backgroundColor = "lightblue";
+scrollFunction();
 window.onscroll = function() {scrollFunction()};
 
 // alert(document.getElementById("top").style.fontSize.toString());
 
 // alert("why is going on!?!");
-
+// alert(document.getElementById("top").style.color);
 function scrollFunction() {
     var navigatorTopBar = document.getElementById("top").style;
   if (document.body.scrollTop > 280 || document.documentElement.scrollTop > 280) {
