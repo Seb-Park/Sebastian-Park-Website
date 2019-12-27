@@ -1,12 +1,17 @@
-<?php
-$to = "sebpark03@yahoo.com";
-$subject = "My subject";
-$txt = "Hello world!";
-$headers = "From: sebpark03@gmail.com";
+<?PHP
+$sender = 'sebpark03@gmail.com';
+$recipient = 'sebpark03@yahoo.com';
 
-if(mail($to, $subject, $txt)){
-    echo "The email($subject) was successfully sent.";
-} else {
-    echo "The email($subject) was NOT sent.";
+$subject = "php mail test";
+$message = "php test message";
+$headers = 'From:' . $sender;
+
+if (mail($recipient, $subject, $message, $headers))
+{
+    echo "Message accepted";
+}
+else
+{
+    echo "Error: Message not accepted";
 }
 ?>
