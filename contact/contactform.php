@@ -18,5 +18,7 @@ else{
     echo("<h1>Order 66 Executed Error</h1>\n Form not sent...");
 }
 echo("\n php WORKS!");
+header("Location: http://www.google.com"); 
+exit;
 
 ?>
