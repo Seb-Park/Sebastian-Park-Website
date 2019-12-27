@@ -1,19 +1,12 @@
 <?php
+$to = "sebpark03@yahoo.com";
+$subject = "My subject";
+$txt = "Hello world!";
+$headers = "From: sebpark03@gmail.com";
 
-    $name = "Johnny Appleseed";
-    $emailFrom = "John.Apples.heed.sorry.seed@gmail.com";
-    $message = "Hi I'm Johnny!!!";
-
-    $emailTo = "sparksoftgame@gmail.com";
-    $headers = "FROM: " . $emailFrom;
-    $txt = "You have received an email from " . $name .".\n\n". $message;
-
-    mail($emailTo, "New Message", $txt, $headers);
-
-    header("Location: index.html");
-    echo("<h1>Form sent!</h1> \n Thanks for your feedback!");
-echo("\n php WORKS!");
-header("Location: thank-you"); 
-exit;
-
+if(mail($to, $subject, $txt)){
+    echo "The email($subject) was successfully sent.";
+} else {
+    echo "The email($subject) was NOT sent.";
+}
 ?>
