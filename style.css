@@ -317,7 +317,7 @@ p.project-card-title:hover{
     text-transform: uppercase;
 }
 
-.contact-form{
+.contact-form .body{
     margin-left: auto;
     margin-right: auto;
 }
@@ -371,7 +371,7 @@ form{
     position: absolute;
     bottom:-35px;
     transform: scale(0,1);
-    transition: transform ease-in-out .25s;
+    /* transition: transform ease-in-out .25s; */
 }
 
 body{
@@ -459,6 +459,7 @@ header{
     /* border-bottom: 5px solid rgba(165, 151, 151, 0.178); */
     display: table;
     width:100%;
+    transition: all .2s ease-in-out;
 }
 
 nav{
@@ -493,7 +494,7 @@ nav a{
 nav li{
     display: inline-block;
     margin-left: 70px;
-    padding-top: 5px;
+    padding-top: 10px;
     font-weight: 100;
     font-family: 'Quicksand';
 
@@ -516,7 +517,7 @@ nav a::before{
     background: white;
     border-radius: 5px 5px 1px 1px;
     position: absolute;
-    bottom:-35px;
+    bottom:-10px;
     transform: scale(0,1);
     transition: transform ease-in-out .25s;
 }
