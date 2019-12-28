@@ -17,6 +17,8 @@ require 'PHPMailer/src/SMTP.php';
     $emailFrom = $_POST['email'];
     $message = $_POST['message'];
 
+    echo $message;
+
     $mail = new PHPMailer(true);
 
     try {
