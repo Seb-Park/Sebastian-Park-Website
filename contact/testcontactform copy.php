@@ -11,12 +11,6 @@ require 'PHPMailer/src/PHPMailer.php';
 require 'PHPMailer/src/SMTP.php';
 
 // Instantiation and passing `true` enables exceptions
-if(isset($_POST['submit'])){
-
-    $name = $_POST['name'];
-    $emailFrom = $_POST['email'];
-    $message = $_POST['message'];
-
 $mail = new PHPMailer(true);
 
 try {
@@ -33,10 +27,10 @@ try {
     $mail->Port = '465';
 
     //Recipients
-    $mail->setFrom('from@gmail.com', 'David_Ball@milton.edu');
-    $mail->addAddress('sparksoftgame@gmail.com');     // Add a recipient
+    $mail->setFrom('from@example.com', 'Mailer');
+    $mail->addAddress('sebpark03@gmail.com');     // Add a recipient
     // $mail->addAddress('ellen@example.com','Ellen Example');               // Name is optional
-    $mail->addReplyTo('info@example.com', 'Information');
+    // $mail->addReplyTo('info@example.com', 'Information');
     // $mail->addCC('cc@example.com');
     // $mail->addBCC('bcc@example.com');
 
@@ -53,8 +47,3 @@ try {
 } catch (Exception $e) {
     echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
 }
-}
-else{
-    echo('Message not sent...');
-}
-?>
