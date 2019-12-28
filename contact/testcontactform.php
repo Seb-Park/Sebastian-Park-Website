@@ -35,10 +35,10 @@ require 'PHPMailer/src/SMTP.php';
         $mail->Port = '465';
 
         //Recipients
-        $mail->setFrom('from@gmail.com', 'David_Ball@milton.edu');
+        $mail->setFrom($emailFrom, $name);
         $mail->addAddress('sparksoftgame@gmail.com');     // Add a recipient
         // $mail->addAddress('ellen@example.com','Ellen Example');               // Name is optional
-        $mail->addReplyTo('info@example.com', 'Information');
+        $mail->addReplyTo($emailFrom, $name);
         // $mail->addCC('cc@example.com');
         // $mail->addBCC('bcc@example.com');
 
@@ -46,9 +46,10 @@ require 'PHPMailer/src/SMTP.php';
 
         // Content
         $mail->isHTML(true);                                  // Set email format to HTML
-        $mail->Subject = 'Here is the subject';
-        $mail->Body    = 'This is the HTML message body <b>in bold!</b>';
-        $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
+        $mail->Subject = 'You were contacted by ' . $name;
+        // $mail->Body    = 'This is the HTML message body <b>in bold!</b>';
+        $mail->Body    = $emailFrom . " says: \n " . $message;
+        $mail->AltBody = $message;
 
         $mail->send();
         echo 'Message has been sent';
