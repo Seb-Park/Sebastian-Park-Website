@@ -1,7 +1,10 @@
-
+fadeOutFader();
 // document.body.style.backgroundColor = "lightblue";
 scrollFunction();
 window.onscroll = function() {scrollFunction()};
+
+// alert("working!");
+
 
 // alert(document.getElementById("top").style.fontSize.toString());
 
@@ -22,4 +25,25 @@ function scrollFunction() {
   }
   console.log("Scrolled");
   
+}
+
+// alert("working!");
+
+
+document.getElementById("home-button").addEventListener("click",function(){fadeInFader("../")});
+document.getElementById("programming-button").addEventListener("click",function(){fadeInFader("../../programming")});
+document.getElementById("music-button").addEventListener("click",function(){fadeInFader("../../music")});
+document.getElementById("contact-button").addEventListener("click",function(){fadeInFader("../../contact")});
+
+function fadeOutFader(){
+    // alert("fading in fader!");
+    fader = document.getElementById("fader");
+    fader.style.opacity = "0";
+}
+
+function fadeInFader(url){
+    // alert("fading in fader!");
+    fader = document.getElementById("fader");
+    fader.style.opacity = "1";
+    setTimeout(function() {window.location.replace(url)}, 1500)
 }

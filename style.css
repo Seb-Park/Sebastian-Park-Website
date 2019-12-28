@@ -6,6 +6,21 @@ html{
 
 }
 
+a{
+    cursor: pointer;
+}
+
+#fader{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    z-index: 1000;
+    opacity: 0;
+    transition: all 1.5s ease-in-out;
+    pointer-events: none;
+}
+
 .fade-out{
     position: fixed;
     height: 100%;
@@ -13,11 +28,16 @@ html{
     background-color: rgb(255, 255, 255);
     z-index: 1000;
     opacity: 0;
+    transition: all 1.5s ease-in-out;
     pointer-events: none;
-    -webkit-animation: fadeout 2s; /* Safari, Chrome and Opera > 12.1 */
-       -moz-animation: fadeout 2s; /* Firefox < 16 */
-        -ms-animation: fadeout 2s; /* Internet Explorer */
-         -o-animation: fadeout 2s; /* Opera < 12.1 */
+    -webkit-animation: fadeout 1s; 
+    /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadeout 1s; 
+       /* Firefox < 16 */
+        -ms-animation: fadeout 1s; 
+        /* Internet Explorer */
+         -o-animation: fadeout 1s; 
+         /* Opera < 12.1 */
             animation: fadeout 2s;
 }
 
