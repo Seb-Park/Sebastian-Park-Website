@@ -45,5 +45,5 @@ function fadeInFader(url){
     // alert("fading in fader!");
     fader = document.getElementById("fader");
     fader.style.opacity = "1";
-    setTimeout(function() {window.location.replace(url)}, 1500)
+    setTimeout(function() {window.location.replace(url)}, 500)
 }
