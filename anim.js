@@ -12,7 +12,7 @@ window.onscroll = function() {scrollFunction()};
 // alert(document.getElementById("top").style.color);
 function scrollFunction() {
     var navigatorTopBar = document.getElementById("top").style;
-    var fixedBackgrounds = document.getElementsByClassName("fixed-background");
+    var slightlyMoving = document.getElementsByClassName("slightly-moving");
   if (document.body.scrollTop > 280 || document.documentElement.scrollTop > 280) {
     navigatorTopBar.padding = "0px 20px";
     navigatorTopBar.backgroundColor = "rgba(255, 105, 180, 0.89)";
@@ -24,10 +24,10 @@ function scrollFunction() {
     navigatorTopBar.boxShadow = "none";
     // document.getElementById("logo").style.fontSize = "35px";
   }
-  for(var i = 0; i < fixedBackgrounds.length; i++){
+  for(var i = 0; i < slightlyMoving.length; i++){
     //   console.log(document.documentElement.scrollTop);
     // console.log(document.documentElement.scrollTop + "px");
-    fixedBackgrounds[i].style.backgroundPositionY = (document.documentElement.scrollTop*-0.3) + "px";
+    slightlyMoving[i].style.backgroundPositionY = (document.documentElement.scrollTop*-0.3) + "px";
   }
 //   console.log("Scrolled");
   
