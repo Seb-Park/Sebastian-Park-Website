@@ -213,6 +213,7 @@ p.project-card-title:hover{
     transform: translate(-50%, -50%);
     color: white;
     text-transform: uppercase;
+    filter: none;
     -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
        -moz-animation: fadein 2s; /* Firefox < 16 */
         -ms-animation: fadein 2s; /* Internet Explorer */
@@ -244,9 +245,12 @@ p.project-card-title:hover{
     float: left;
 }
 
-.pianohands{
-    background-image: url('../images/pianoHands.jpg');
+.mainBG{
+    /* background-image: url('../images/pianoHands.jpg'); */
+    /* background-image: url('/images/201903-12-MAJazz-Bridges-Langa-frances-scanlon-MR-00537.jpg'); */
+    background-image: url('images/trumpetMeBlurred.png');
     height: 100%;
+    /* filter: blur(10px); */
 }
 
 .gamedev{
@@ -255,6 +259,11 @@ p.project-card-title:hover{
     height: 50%;
     /* background-image: url('../images/tenor.gif'); */
 
+}
+
+.mePiano{
+    background-image: url('../images/pianoMeBlurred.png');
+    height: 100%;
 }
 
 .fixed-background{
@@ -269,11 +278,15 @@ p.project-card-title:hover{
     background-size: 105%;
     /* background-repeat: no-repeat; */
     /* background-size: 200px 200px; */
-    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
-       -moz-animation: fadein 2s; /* Firefox < 16 */
-        -ms-animation: fadein 2s; /* Internet Explorer */
-         -o-animation: fadein 2s; /* Opera < 12.1 */
-            animation: fadein 2s;
+    /* -webkit-animation: fadein 2s;  */
+    /* Safari, Chrome and Opera > 12.1 */
+       /* -moz-animation: fadein 2s;  */
+       /* Firefox < 16 */
+        /* -ms-animation: fadein 2s;  */
+        /* Internet Explorer */
+         /* -o-animation: fadein 2s;  */
+         /* Opera < 12.1 */
+            /* animation: fadein 2s; */
 }
 .bg-image{
     width:100%;
