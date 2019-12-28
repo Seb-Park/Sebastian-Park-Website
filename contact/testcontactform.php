@@ -53,8 +53,11 @@ require 'PHPMailer/src/SMTP.php';
 
         $mail->send();
         echo 'Message has been sent';
+        header("Location: thank-you"); 
     } catch (Exception $e) {
-        echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+        echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo} <br> Redirecting in 5 seconds...";
+        sleep(5);
+        header("Location: ../"); 
     }
 // }
 // else{
