@@ -48,7 +48,7 @@ require 'PHPMailer/src/SMTP.php';
         $mail->isHTML(true);                                  // Set email format to HTML
         $mail->Subject = 'You were contacted by ' . $name;
         // $mail->Body    = 'This is the HTML message body <b>in bold!</b>';
-        $mail->Body    = $emailFrom . " says: \n " . $message;
+        $mail->Body    = "<b>" . $emailFrom . " says: </b> \n " . $message;
         $mail->AltBody = $message;
 
         $mail->send();
