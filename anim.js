@@ -27,7 +27,8 @@ function scrollFunction() {
   for(var i = 0; i < slightlyMoving.length; i++){
     //   console.log(document.documentElement.scrollTop);
     // console.log(document.documentElement.scrollTop + "px");
-    slightlyMoving[i].style.backgroundPositionY = (document.documentElement.scrollTop*-0.3) + "px";
+    // slightlyMoving[i].style.backgroundPositionY = (document.documentElement.scrollTop*-.7) + "px";//if background-position is fixed
+    slightlyMoving[i].style.backgroundPositionY = (document.documentElement.scrollTop*-.3) + "px";//if background-position is local
   }
 //   console.log("Scrolled");
   
