@@ -37,7 +37,7 @@ function scrollFunction() {
 // alert("working!");
 
 
-document.getElementById("home-button").addEventListener("click",function(){fadeInFader("../")});
+document.getElementById("home-button").addEventListener("click",function(){fadeInFader("../..")});
 document.getElementById("programming-button").addEventListener("click",function(){fadeInFader("../../programming")});
 document.getElementById("music-button").addEventListener("click",function(){fadeInFader("../../music")});
 document.getElementById("contact-button").addEventListener("click",function(){fadeInFader("../../contact")});
