@@ -41,15 +41,28 @@
         <h1>Want to talk?</h1>
     </div>
     <div class="contact-form">
-        <form id="contact-form" method="post" action="testcontactform.php">
+        <!-- <form id="contact-form" method="post" action="testcontactform.php">
             <input name="name" type="name" class="form-control" placeholder="First and Last Name" required><br>
             <input name="email" type="email" class="form-control" placeholder="Email" required><br>
             <textarea name="message" type="message" class="form-control" placeholder="Message" rows=4
                 required></textarea>
             <br>
             <input type="submit" class="form-control submit" value="SUBMIT">
+        </form> -->
+        <form action="https://formspree.io/xqkewpva" method="POST">
+            <!-- <label> -->
+                <input type="text" name="name" class="form-control" placeholder="First and Last Name" required><br>
+            <!-- </label> -->
+            <!-- <label> -->
+                <input type="email" name="_replyto" class="form-control" placeholder="Email" required><br>
+            <!-- </label> -->
+            <!-- <label> -->
+                <textarea name="message" class="form-control" placeholder="Message" rows=4
+                required></textarea>
+            <!-- </label> -->
+            <br>
+            <input type="submit" value="Submit" class="form-control submit">
         </form>
-
     </div>
     <div class="page-footer">
         <div class="flex">
