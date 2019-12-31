@@ -382,6 +382,8 @@ form{
     border-bottom: 1px solid white;
     padding: 20px;
     resize: vertical;
+    max-height: 200px;
+    min-height: 30px;
     /* border-bottom: solid */
 }
 
