@@ -1,3 +1,5 @@
+var isMobile;
+
 fadeOutFader();
 // document.body.style.backgroundColor = "lightblue";
 scrollFunction();
