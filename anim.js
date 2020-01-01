@@ -30,7 +30,7 @@ function scrollFunction() {
         //   console.log(document.documentElement.scrollTop);
         // console.log(document.documentElement.scrollTop + "px");
         // slightlyMoving[i].style.backgroundPositionY = (document.documentElement.scrollTop*-.7) + "px";//if background-position is fixed
-        slightlyMoving[i].style.backgroundPositionY = (document.documentElement.scrollTop * -.3) + "px";//if background-position is local
+        slightlyMoving[i].style.backgroundPositionY = (document.documentElement.scrollTop * (-.3/900) * document.body.clientHeight) + "px";//if background-position is local//the image moves like that so that it changes depending on screen height moves less or more
     }
     //   console.log("Scrolled");
 
