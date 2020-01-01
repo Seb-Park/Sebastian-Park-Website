@@ -13,10 +13,12 @@ window.onscroll = function () { scrollFunction() };
 function scrollFunction() {
     var navigatorTopBar = document.getElementById("top").style;
     var slightlyMoving = document.getElementsByClassName("slightly-moving");
-    if (document.body.scrollTop > 280 || document.documentElement.scrollTop > 280) {
+    // console.log(document.documentElement.scrollTop+"/"+document.body.clientHeight);
+    if (document.body.scrollTop / document.body.clientHeight > 280 / 790
+        || document.documentElement.scrollTop / document.body.clientHeight > 280/790) {
         navigatorTopBar.padding = "0px 20px";
         navigatorTopBar.backgroundColor = "rgba(255, 105, 180, 0.89)";
-        navigatorTopBar.boxShadow = "0px 0px 15px rgb(51, 51, 51)";
+        navigatorTopBar.boxShadow = "0px 0px 10px rgb(51, 51, 51)";
         // document.getElementById("logo").style.fontSize = "25px";
     } else {
         navigatorTopBar.padding = "20px 20px";
@@ -74,11 +76,13 @@ function setScene(sceneNumber) {
 }
 
 async function readTextFilePromise(file) {
-    var returnable = await function() {fetch(file)
+    var returnable = await function () {
+        fetch(file)
         .then(response => response.text())
         .then((data) => {
             return data.toString();
-        })}
+        })
+    }
     return (await (Promise.resolve(returnable))).toString();
 }
 
@@ -92,8 +96,9 @@ function readTextFileFetch(file) {
     return Promise.resolve(returnable);
 }
 
-async function readTextFileWrong(file){
-    let result = await async function() {fetch(file)
+async function readTextFileWrong(file) {
+    let result = await async function () {
+        fetch(file)
         .then(response => response.text())
         .then((data) => {
             console.log(data.toString());
@@ -104,10 +109,10 @@ async function readTextFileWrong(file){
     return result;
 }
 
-function readTextFile(file){
+function readTextFile(file) {
     var client = new XMLHttpRequest();
     client.open('GET', file);
-    client.onreadystatechange = function() {
+    client.onreadystatechange = function () {
         // alert(client.responseText);
         console.log(client.responseText);
     }
