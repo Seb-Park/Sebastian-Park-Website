@@ -37,7 +37,7 @@ function scrollFunction() {
 // alert("working!");
 
 
-document.getElementById("home-button").addEventListener("click", function () { setScene(0) });
+document.getElementById("home-button").addEventListener("click", function () { fadeInFader("../../") });
 document.getElementById("programming-button").addEventListener("click", function () { fadeInFader("../../programming") });
 document.getElementById("music-button").addEventListener("click", function () { fadeInFader("../../music") });
 document.getElementById("contact-button").addEventListener("click", function () { fadeInFader("../../contact") });
@@ -55,28 +55,62 @@ function fadeInFader(url) {
     setTimeout(function () { window.location.replace(url) }, 500)
 }
 
-function setScene(sceneNumber){
-    if(sceneNumber == 0){
-        document.documentElement.innerHTML = readTextFile("index.html");
-        console.log(readTextFile("index.html"));
+function setScene(sceneNumber) {
+    if (sceneNumber == 0) {
+        // document.documentElement.innerHTML = readTextFile("index.html");
+        // console.log(await readTextFile("index.html"));
+        alert(readTextFile("index.html"));
     }
-    if(sceneNumber == 1){
+    if (sceneNumber == 1) {
         document.documentElement.innerHTML = readTextFile("../programming/index.html");
     }
-    if(sceneNumber == 2){
+    if (sceneNumber == 2) {
         document.documentElement.innerHTML = readTextFile("../music/index.html");
     }
-    if(sceneNumber == 3){
+    if (sceneNumber == 3) {
         document.documentElement.innerHTML = readTextFile("contact/index.html");
         console.log(readTextFile("contact/index.html"));
     }
 }
 
-function readTextFile(file) {
-    fetch(file)
+async function readTextFilePromise(file) {
+    var returnable = await function() {fetch(file)
         .then(response => response.text())
         .then((data) => {
-            console.log(""+data + "");
-            return data;
+            return data.toString();
+        })}
+    return (await (Promise.resolve(returnable))).toString();
+}
+
+function readTextFileFetch(file) {
+    var returnable;
+    returnable = fetch(file)
+        .then(response => response.text())
+        .then((data) => {
+            return data.toString();
         })
+    return Promise.resolve(returnable);
+}
+
+async function readTextFileWrong(file){
+    let result = await async function() {fetch(file)
+        .then(response => response.text())
+        .then((data) => {
+            console.log(data.toString());
+            return data.toString();
+        })
+    }
+    console.log(result);
+    return result;
+}
+
+function readTextFile(file){
+    var client = new XMLHttpRequest();
+    client.open('GET', file);
+    client.onreadystatechange = function() {
+        // alert(client.responseText);
+        console.log(client.responseText);
+    }
+    client.send();
+    return (client.responseText);
 }
