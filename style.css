@@ -262,6 +262,7 @@ p.project-card-title:hover{
 }
 
 .logo{
+    cursor: pointer;
     float: left;
 }
 
@@ -288,7 +289,7 @@ p.project-card-title:hover{
 
 .slightly-moving{
     background-size: 120%;
-    background-attachment: local;
+    background-attachment: local!important;
 }
 
 .fixed-background{
@@ -300,7 +301,7 @@ p.project-card-title:hover{
     /* position: fixed; */
     /* z-index: -100;
     height: 100%;*/
-    background-attachment: local;
+    background-attachment: fixed;
     /*background-color: hotpink;*/
     /* background-size: 120%; */
     /* background-repeat: no-repeat; */

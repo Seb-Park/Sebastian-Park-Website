@@ -45,6 +45,7 @@ document.getElementById("home-button").addEventListener("click", function () { f
 document.getElementById("programming-button").addEventListener("click", function () { fadeInFader("../../programming") });
 document.getElementById("music-button").addEventListener("click", function () { fadeInFader("../../music") });
 document.getElementById("contact-button").addEventListener("click", function () { fadeInFader("../../contact") });
+document.getElementsByClassName("logo")[0].addEventListener("click", ()=>{fadeInFader("../..")});
 
 function fadeOutFader() {
     // alert("fading in fader!");
@@ -99,7 +100,7 @@ function readTextFileFetch(file) {
 }
 
 async function readTextFileWrong(file) {
-    let result = await async function () {
+    let result = (value) => {
         fetch(file)
         .then(response => response.text())
         .then((data) => {
