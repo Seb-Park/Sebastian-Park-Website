@@ -363,12 +363,21 @@ p.project-card-title:hover{
     margin-right: auto;
 }
 
+.content-mobile-video{
+    margin-top: 200px;
+    margin-left: 50%;
+    position: absolute;
+    transform: translate(-50%, 0%);
+    /* transition: all 4s ease-in-out; */
+    background-color: rgb(20,20,20);
+}
+
 form{
     margin-top: 30%;
     margin-left: 50%;
     position: absolute;
     transform: translate(-50%, -50%);
-    transition: all 4s ease-in-out;
+    /* transition: all 4s ease-in-out; */
 }
 
 .form-control{
