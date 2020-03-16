@@ -276,10 +276,13 @@ p.project-card-title:hover{
 }
 
 .gamedev{
+    /* background-image: url('../images/standuptrumpet.jpg'); */
     background-image: url('../images/vectorfunk.png');
+
     /* background-image: url('../images/code.gif'); */
     height: 50%;
     /* background-image: url('../images/tenor.gif'); */
+    background-repeat: repeat-y;
 
 }
 
@@ -328,21 +331,23 @@ p.project-card-title:hover{
     background-color: hotpink;
     /* height: 70px; */
     width: 300px;
-    border-radius: 15px;
+    border-radius: 30px;
     display: inline-block;
     text-decoration: none;
     color: white;
-    font-size: 30px;
+    font-size: 25px;
     font-family: 'QuickSand';
-    transform: translate(0%, 50%);
+    transform: translate(0%, 0%);
     text-align: center;
-    padding: 30px 0px;
-    margin-top: 9%;
+    padding: 10px 0px;
+    margin-top: 12%;
     vertical-align: middle;
+    transition: all ease-in-out .1s;
 }
 
 .resume-button:hover{
-    filter: brightness(90%);
+    /* filter: brightness(90%); */
+    transform: scale(1.05, 1.05);
 }
 
 .contact-page-head{
