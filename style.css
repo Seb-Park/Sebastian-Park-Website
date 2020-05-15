@@ -260,13 +260,6 @@ p.project-card-title:hover{
             animation: fadein 2s;
 }
 
-.red{
-    /* color:red; */
-}
-.blue{
-    color:blue;
-}
-
 .title-caption{
     font-family: 'Quicksand';
     text-align: center;

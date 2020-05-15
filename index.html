@@ -15,35 +15,14 @@
         integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="fill.js"></script>
     <script src="typed.js"></script>
     <!-- <link rel="stylesheet" type="text/css" href="mobile.css"> -->
 </head>
 
 <body>
-    <div class="fade-out">
-    </div>
-    <div id="fader">
-    </div>
-    <header>
-        <div class="page-header" id="top">
-            <h1 class="logo">
-                <img src="images/logo.png" alt="" class="logo-icon">
-                Sebastian Park.
-            </h1>
-            <nav>
-                <ul>
-                    <li><a id="home-button">Home</a></li>
-                    <li><a id="programming-button">Programming</a></li>
-                    <li><a href="https://cambridge.nuvustudio.com/sebastian-park" target="_blank">Design</a></li>
-                    <li><a id="music-button">Music</a></li>
-                    <li><a id="contact-button">Contact</a></li>
-                    <li></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-
+    <div class="fade-out"></div>
+    <div id="fader"></div>
+    <div id="insert-header"></div>
     <div class="fixed-background mainBG slightly-moving">
         <h1 class="large-and-centered unselectable">
             Sebastian Park.
@@ -81,44 +60,24 @@
             </center>
         </p>
     </div>
-    <div class="page-footer">
-        <div class="flex">
-            <a href="https://github.com/Seb-Park" target="_blank">
-                <i class="fab fa-github"></i>
-            </a>
-        </div>
-        <div class="flex">
-            <a href="https://play.google.com/store/apps/developer?id=Sebastian+Park" target="_blank">
-                <i class="fab fa-google-play"></i>
-            </a>
-        </div>
-        <div class="flex">
-            <a href="http://sebastian-park.netlify.com/images/resume.pdf" target="_blank">
-                <i class="far fa-file-pdf"></i>
-                <!--far fa-file-alt or fa-file-pdf-->
-            </a>
-        </div>
-        <div class="flex">
-            <a href="https://devpost.com/Seb-park" target="_blank">
-                <i class="fab fa-dev"></i>
-
-
-        </div>
-        <script type="text/javascript">
-            var typed = new Typed('.title-caption', {
-                strings: [
-                    '',
-                    'Game Developer ^1000',
-                    '^500 Jazz Musician ^1000',
-                    '^500 <span style="color:rgb(250, 40, 40)">Spider</span>-<span style="color:blue;"">Man</span> Fanatic ^1000'
-                ],
-                smartBackspace: true,
-                typeSpeed: 50,
-                backSpeed: 50,
-                loop: true
-            });
-        </script>
+    <div id="insert-footer"></div>
+    <script type="text/javascript">
+        var typed = new Typed('.title-caption', {
+            strings: [
+                '',
+                'Game Developer ^1000',
+                '^500 Jazz Musician ^1000',
+                '^500 <span style="color:rgb(250, 40, 40)">Spider</span>-<span style="color:blue;"">Man</span> Fanatic ^1000'
+            ],
+            smartBackspace: true,
+            typeSpeed: 50,
+            backSpeed: 50,
+            loop: true
+        });
+    </script>
 </body>
+<script src="insertHeaderFooter.js"></script>
+<script src="fill.js"></script>
 <script src="../anim.js"></script>
 
 </html>
