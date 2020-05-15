@@ -288,7 +288,7 @@ p.project-card-title:hover{
 .mainBG{
     /* background-image: url('../images/pianoHands.jpg'); */
     /* background-image: url('/images/201903-12-MAJazz-Bridges-Langa-frances-scanlon-MR-00537.jpg'); */
-    background-image: url('images/PianoSpiderman2.jpg');
+    background-image: url('../images/PianoSpiderman2.jpg');
     height: 100%;
     background-attachment: fixed;
     /* filter: blur(10px); */
