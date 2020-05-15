@@ -220,6 +220,25 @@ p.project-card-title:hover{
     animation: 1s blink step-end infinite;
 }
 
+.typed::after{
+    content: '';
+    display: block;
+    height: 18px;
+    width: 2px;
+    color: white !important;
+    background: white;
+    background-color: white;
+    position: absolute;
+    transform: translate(-50%, 25%);
+    top:0;
+    right: -5px;
+    -webkit-animation: 1s blink step-end infinite;
+    -moz-animation: 1s blink step-end infinite;
+    -ms-animation: 1s blink step-end infinite;
+    -o-animation: 1s blink step-end infinite;
+    animation: 1s blink step-end infinite;
+}
+
 .large-and-centered{
     font-family: 'Open Sans';
     text-align: center;
@@ -239,6 +258,13 @@ p.project-card-title:hover{
         -ms-animation: fadein 2s; /* Internet Explorer */
          -o-animation: fadein 2s; /* Opera < 12.1 */
             animation: fadein 2s;
+}
+
+.red{
+    /* color:red; */
+}
+.blue{
+    color:blue;
 }
 
 .title-caption{

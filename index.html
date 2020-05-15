@@ -16,23 +16,24 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="fill.js"></script>
+    <script src="typed.js"></script>
     <!-- <link rel="stylesheet" type="text/css" href="mobile.css"> -->
 </head>
 
 <body>
-    <div class = "fade-out">
+    <div class="fade-out">
     </div>
-    <div id = "fader">
+    <div id="fader">
     </div>
     <header>
-        <div class="page-header" id = "top">
+        <div class="page-header" id="top">
             <h1 class="logo">
                 <img src="images/logo.png" alt="" class="logo-icon">
                 Sebastian Park.
             </h1>
             <nav>
                 <ul>
-                    <li><a id = "home-button">Home</a></li>
+                    <li><a id="home-button">Home</a></li>
                     <li><a id="programming-button">Programming</a></li>
                     <li><a href="https://cambridge.nuvustudio.com/sebastian-park" target="_blank">Design</a></li>
                     <li><a id="music-button">Music</a></li>
@@ -44,12 +45,11 @@
     </header>
 
     <div class="fixed-background mainBG slightly-moving">
-        <h1 class="large-and-centered cursor unselectable">
+        <h1 class="large-and-centered unselectable">
             Sebastian Park.
         </h1>
-        <p class="title-caption">
-            Game Developer, Jazz Musician, and Spider-man Fanatic.
-        </p>
+        <span class="title-caption typed">
+        </span>
     </div>
     <div class="page-content">
         <!-- <p class="page-content-text">Hi! My name is Sebastian Park and I am a junior at Milton Academy in
@@ -75,8 +75,10 @@
         </h2>
         <p class="page-content-text">
             <center>
-            Hello! My name is Sebastian Park! I'm a junior at Milton Academy who loves to make cool things, whether that's jazz, games, or graphics. <br><br> My website's currently under construction, but feel free to check out my Github or resume below!
-        </center>
+                Hello! My name is Sebastian Park! I'm a junior at Milton Academy who loves to make cool things, whether
+                that's jazz, games, or graphics. <br><br> My website's currently under construction, but feel free to
+                check out my Github or resume below!
+            </center>
         </p>
     </div>
     <div class="page-footer">
@@ -92,7 +94,8 @@
         </div>
         <div class="flex">
             <a href="http://sebastian-park.netlify.com/images/resume.pdf" target="_blank">
-                <i class="far fa-file-pdf"></i><!--far fa-file-alt or fa-file-pdf-->
+                <i class="far fa-file-pdf"></i>
+                <!--far fa-file-alt or fa-file-pdf-->
             </a>
         </div>
         <div class="flex">
@@ -100,7 +103,22 @@
                 <i class="fab fa-dev"></i>
 
 
-    </div>
+        </div>
+        <script type="text/javascript">
+            var typed = new Typed('.title-caption', {
+                strings: [
+                    '',
+                    'Game Developer ^1000',
+                    '^500 Jazz Musician ^1000',
+                    '^500 <span style="color:rgb(250, 40, 40)">Spider</span>-<span style="color:blue;"">Man</span> Fanatic ^1000'
+                ],
+                smartBackspace: true,
+                typeSpeed: 50,
+                backSpeed: 50,
+                loop: true
+            });
+        </script>
 </body>
 <script src="../anim.js"></script>
+
 </html>
