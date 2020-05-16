@@ -242,7 +242,8 @@ p.project-card-title:hover{
 .large-and-centered{
     font-family: 'Open Sans';
     text-align: center;
-    font-size: 70px;
+    font-size: 5vw;
+    /* font-size: 70px; */
     position: absolute;
     /* margin-top: 25%; */
     font-weight: bold;
