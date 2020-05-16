@@ -27,6 +27,12 @@
         <h1 class="large-and-centered unselectable">
             Sebastian Park.
         </h1>
+        <div id="typed-strings">
+            <p></p>
+            <p>Game Developer ^1000</p>
+            <p>^500 Jazz Musician ^1000</p>
+            <p>^500 <span style="color:rgb(250, 40, 40)">Spider</span>-<span style="color:blue;">Man</span> Fanatic ^1000</p>
+        </div>
         <span class="title-caption typed">
         </span>
     </div>
@@ -63,12 +69,13 @@
     <div id="insert-footer"></div>
     <script type="text/javascript">
         var typed = new Typed('.title-caption', {
-            strings: [
-                '',
-                'Game Developer ^1000',
-                '^500 Jazz Musician ^1000',
-                '^500 <span style="color:rgb(250, 40, 40)">Spider</span>-<span style="color:blue;"">Man</span> Fanatic ^1000'
-            ],
+            // strings: [
+            //     '',
+            //     'Game Developer ^1000',
+            //     '^500 Jazz Musician ^1000',
+            //     '^500 <span style="color:rgb(250, 40, 40)">Spider</span>-<span style="color:blue;"">Man</span> Fanatic ^1000'
+            // ],
+            stringsElement: '#typed-strings',
             smartBackspace: true,
             typeSpeed: 50,
             backSpeed: 50,
