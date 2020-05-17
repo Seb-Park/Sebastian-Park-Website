@@ -270,8 +270,11 @@ p.project-card-title:hover{
     color: white;
     /* display: inline-block; */
     position: absolute;
-    top: 55%;
-    /* right: 20%; */
+    top: 55.2%;
+    /* text-align: right; */
+    margin: 0px;
+    padding: 0%;
+    font-family: 'Quicksand';
 }
 
 .title-caption{
@@ -279,6 +282,7 @@ p.project-card-title:hover{
     font-family: 'Quicksand';
     text-align: center;
     font-size: 20px;
+    margin: 0px;
     /* position:absolute; */
     position: relative;
     /* margin-top: 25%; */
