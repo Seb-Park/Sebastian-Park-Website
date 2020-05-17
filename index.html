@@ -33,8 +33,7 @@
             <p>^500 Jazz Musician ^1000</p>
             <p>^500 <span style="color:rgb(250, 40, 40)">Spider</span>-<span style="color:blue;">Man</span> Fanatic ^1000</p>
         </div>
-        <span class="title-caption typed">
-        </span>
+        <span class="title-caption typed"></span>
     </div>
     <div class="page-content">
         <!-- <p class="page-content-text">Hi! My name is Sebastian Park and I am a junior at Milton Academy in
@@ -68,7 +67,7 @@
     </div>
     <div id="insert-footer"></div>
     <script type="text/javascript">
-        var typed = new Typed('.title-caption', {
+        var typed = new Typed('.typed', {
             // strings: [
             //     '',
             //     'Game Developer ^1000',
@@ -79,7 +78,8 @@
             smartBackspace: true,
             typeSpeed: 50,
             backSpeed: 50,
-            loop: true
+            loop: true,
+            cursorChar: "|"
         });
     </script>
 </body>
