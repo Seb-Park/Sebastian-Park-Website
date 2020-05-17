@@ -2,7 +2,7 @@ var header =
 '<header>'+
 '<div class="page-header" id="top">'+
     '<h1 class="logo">'+
-        '<img src="../images/logo.png" alt="" class="logo-icon">    Sebastian Park.</h1>'+
+        '<img src="/images/logo.png" alt="" class="logo-icon">    Sebastian Park.</h1>'+
     '<nav>'+
         '<ul>'+
             '<li><a id="home-button">Home</a></li>'+

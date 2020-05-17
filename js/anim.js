@@ -41,11 +41,11 @@ function scrollFunction() {
 // alert("working!");
 
 
-document.getElementById("home-button").addEventListener("click", function () { fadeInFader("../../") });
-document.getElementById("programming-button").addEventListener("click", function () { fadeInFader("../../programming") });
-document.getElementById("music-button").addEventListener("click", function () { fadeInFader("../../music") });
-document.getElementById("contact-button").addEventListener("click", function () { fadeInFader("../../contact") });
-document.getElementsByClassName("logo")[0].addEventListener("click", ()=>{fadeInFader("../..")});
+document.getElementById("home-button").addEventListener("click", function () { fadeInFader("/") });
+document.getElementById("programming-button").addEventListener("click", function () { fadeInFader("/programming") });
+document.getElementById("music-button").addEventListener("click", function () { fadeInFader("/music") });
+document.getElementById("contact-button").addEventListener("click", function () { fadeInFader("/contact") });
+document.getElementsByClassName("logo")[0].addEventListener("click", ()=>{fadeInFader("/")});
 
 function fadeOutFader() {
     // alert("fading in fader!");
@@ -67,10 +67,10 @@ function setScene(sceneNumber) {
         alert(readTextFile("index.html"));
     }
     if (sceneNumber == 1) {
-        document.documentElement.innerHTML = readTextFile("../programming/index.html");
+        document.documentElement.innerHTML = readTextFile("/programming/index.html");
     }
     if (sceneNumber == 2) {
-        document.documentElement.innerHTML = readTextFile("../music/index.html");
+        document.documentElement.innerHTML = readTextFile("/music/index.html");
     }
     if (sceneNumber == 3) {
         document.documentElement.innerHTML = readTextFile("contact/index.html");
