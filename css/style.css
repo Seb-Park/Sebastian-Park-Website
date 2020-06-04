@@ -117,6 +117,7 @@ h1{
     filter: contrast(80%);
     /* filter: blur(2px); */
     position: relative;
+    cursor: pointer !important;
 }
 
 .project-card:hover{
