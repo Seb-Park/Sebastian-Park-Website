@@ -1,7 +1,11 @@
 * { 
     margin:0; 
     padding:0; 
-    /* box-sizing: border-box; */
+    box-sizing: border-box;
+}
+
+:root{
+    --nav-bg: rgba(255, 105, 180, 0.89);
 }
 
 html{
@@ -144,36 +148,6 @@ h1{
     -ms-user-select: none;
     user-select: none;
 }
-/* .project-card:hover::before{
-    
-} */
-
-/* .pc-container:hover::after{
-    opacity: 1;
-    height: 185px;
-} 
-
-.pc-container{
-    text-decoration: none;
-    margin: 0;
-    padding: 0;
-}
-
-.pc-container::after{
-    content: '';
-    position: relative;
-    display: block;
-    height: 180px;
-    width: 92%;
-    background: rgba(0, 255, 213, 0);
-    border-radius: 10px;
-    left: 50%;
-    top: 0px;
-    opacity: 0;
-    transform: translate(-50%, -146%);
-    transition: all ease-in-out .25s;
-    pointer-events: none;
-}*/
 
 p.project-card-title{
     text-align: center;
@@ -573,12 +547,15 @@ header{
 }
 
 nav{
+    margin-right: 30px;
     float: right;
+    transition: all ease-in-out .2s;
     /* position: absolute;
     text-align: left;
     top:100%;
     left:0; */
 }
+
 
 h1::after{
     content: '';
@@ -598,7 +575,6 @@ nav a{
     text-transform: uppercase;
     transition: all .2s ease-in-out;
     font-size: 20px;
-
 }
 
 nav li{
@@ -607,8 +583,8 @@ nav li{
     padding-top: 10px;
     font-weight: 100;
     font-family: 'Quicksand';
-
     position: relative;
+    transition: opacity 150ms ease-in-out;
 }
 
 nav a:hover{
@@ -631,6 +607,86 @@ nav a::before{
     transform: scale(0,1);
     transition: transform ease-in-out .25s;
 }
+
+.nav-toggle{
+    display: none;
+}
+
+@media screen and (max-width: 1200px) {
+
+    .logo-icon{
+        display: none;
+    }
+
+    .page-header{
+        overflow: visible;
+    }
+    
+    nav{
+        margin-right: 0;
+        position: absolute;
+        transform: scale(1, 0);
+        transform-origin: top;
+        text-align: right;
+        top: 100%;
+        right: 0px;
+        padding-right: 30px;
+        padding-bottom: 30px;
+        width: 100vh;
+        background-color: var(--nav-bg);
+    }
+
+    nav a::before{
+        display: none;
+    }
+
+    nav li{
+        display: block;
+        opacity: 0;
+    }
+    
+    .nav-toggle:checked ~ nav{
+        display: block;
+        transform: scale(1,1);
+    }
+    
+    .nav-toggle:checked ~ nav li{
+        opacity: 1;
+        transition: opacity 250ms ease-in-out 250ms;
+    }
+    
+    .nav-toggle-label{
+        position: absolute;
+        top: 0;
+        right: 30px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+    
+    .nav-toggle-label span,
+    .nav-toggle-label span::before,
+    .nav-toggle-label span::after {
+        display: block;
+        background: white;
+        height: 2px;
+        width: 2em;
+        border-radius: 2px;
+        position: relative;
+    }
+    
+    .nav-toggle-label span::before{
+        content: '';
+        position: absolute;
+        bottom: 7px;
+    }
+    
+    .nav-toggle-label span::after {
+        content: '';
+        position: absolute;
+        top: 7px;
+    }
+  }
 
 subtitle{
     text-align: center;

@@ -1,23 +1,26 @@
 var isMobile;
 
 var footer = document.getElementsByClassName("page-footer")[0];
+var navigatorTopBar = document.getElementById("top").style;
+var slightlyMoving = document.getElementsByClassName("slightly-moving");
+var dropdown = document.getElementsByTagName("nav")[0].style;
 
 fadeOutFader();
 scrollFunction();
 window.onscroll = function () { scrollFunction() };
 
 function scrollFunction() {
-    var navigatorTopBar = document.getElementById("top").style;
-    var slightlyMoving = document.getElementsByClassName("slightly-moving");
     // console.log(document.documentElement.scrollTop+"/"+document.body.clientHeight);
     if (document.body.scrollTop / document.body.clientHeight > 280 / 790
         || document.documentElement.scrollTop / document.body.clientHeight > 280 / 790) {
         navigatorTopBar.padding = "0px 20px";
-        navigatorTopBar.backgroundColor = "rgba(255, 105, 180, 0.89)";
+        navigatorTopBar.backgroundColor = "var(--nav-bg)";
+        dropdown.backgroundColor = "var(--nav-bg)";
         navigatorTopBar.boxShadow = "0px 0px 10px rgb(51, 51, 51)";
     } else {
         navigatorTopBar.padding = "20px 20px";
         navigatorTopBar.backgroundColor = "rgba(255, 105, 180, 0)";
+        dropdown.backgroundColor = "rgba(255, 105, 180, 0)";
         navigatorTopBar.boxShadow = "none";
     }
     for (var i = 0; i < slightlyMoving.length; i++) {
@@ -33,5 +36,4 @@ function scrollFunction() {
         footer.style.opacity = "0";
         footer.style.pointerEvents = "none";
     }
-    console.log(`\r ${document.documentElement.scrollTop}`)
 }
