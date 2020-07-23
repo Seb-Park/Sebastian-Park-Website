@@ -619,6 +619,10 @@ nav a::before{
         display: none;
     }
 
+    .logo{
+        font-size: 25px !important;
+    }
+
     .page-header{
         overflow: visible;
     }
