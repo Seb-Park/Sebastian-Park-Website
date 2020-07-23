@@ -1,9 +1,14 @@
+* { 
+    margin:0; 
+    padding:0; 
+    /* box-sizing: border-box; */
+}
+
 html{
     height: 100%;
     width: 100%;
     background-color: white;
     overflow-x: hidden;
-
 }
 
 a{
@@ -499,6 +504,7 @@ body{
     /* justify-content: space-between; */
     padding: 10px 20px;
     width: 97.5%;
+    transition: all ease-in-out .2s;
 }
 
 .flex{
@@ -551,8 +557,6 @@ header{
     box-shadow: none;
     z-index: 999;
     position: fixed;
-    margin-left: 0px;
-    margin-right: 0px;
     margin: 0px;
     /* background-color: rgb(0,255,200,0.5); */
     /* background-color: rgba(134, 45, 90, 0.712); */

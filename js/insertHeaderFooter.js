@@ -39,3 +39,9 @@ var footer =
             '</div>';
 document.getElementById("insert-header").innerHTML=header;
 document.getElementById("insert-footer").innerHTML=footer;
+
+document.getElementById("home-button").addEventListener("click", function () { fadeInFader("/") });
+document.getElementById("programming-button").addEventListener("click", function () { fadeInFader("/programming") });
+document.getElementById("music-button").addEventListener("click", function () { fadeInFader("/music") });
+document.getElementById("contact-button").addEventListener("click", function () { fadeInFader("/contact") });
+document.getElementsByClassName("logo")[0].addEventListener("click", ()=>{fadeInFader("/")});
