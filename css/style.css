@@ -375,6 +375,33 @@ p.project-card-title:hover{
     transform: scale(1.05, 1.05);
 }
 
+.music-page-head{
+    text-align: center;
+    font-size: 70px;
+    position: relative;
+    width: 100vw;
+    /* display: inline-flex; */
+    /* margin-top: 25%; */
+    font-weight: bold;
+    justify-content: center;
+    /* left: 50%; */
+    top: 20vh;
+    /* transform: translate(-50%, -50%); */
+    color: white;
+    text-transform: uppercase;
+}
+
+.music-content{
+    display: inline-flex;
+    flex-direction: column;
+    position: relative;
+    top: 30vh;
+}
+
+.jazz-recording{
+    margin: 20px;
+}
+
 .contact-page-head{
     text-align: center;
     font-size: 70px;
