@@ -312,7 +312,7 @@ p.project-card-title:hover{
 }
 
 .mePiano{
-    background-image: url('../images/pianoMeBlurred.png');
+    background-image: url('../images/pianoMeUnblurred.jpg');
     height: 100%;
 }
 
@@ -375,6 +375,15 @@ p.project-card-title:hover{
     transform: scale(1.05, 1.05);
 }
 
+.background-blur{
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    top: 0%;
+    left: 0%;
+    backdrop-filter: blur(7px);
+}
+
 .music-page-head{
     text-align: center;
     font-size: 70px;
@@ -400,6 +409,10 @@ p.project-card-title:hover{
 
 .jazz-recording{
     margin: 20px;
+}
+
+.jazz-recording:focus {
+    outline: none;
 }
 
 .contact-page-head{
