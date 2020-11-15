@@ -382,6 +382,7 @@ p.project-card-title:hover{
     top: 0%;
     left: 0%;
     backdrop-filter: blur(7px);
+   -webkit-backdrop-filter: blur(7px);
 }
 
 .music-page-head{
