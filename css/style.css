@@ -408,6 +408,11 @@ p.project-card-title:hover{
     top: 30vh;
 }
 
+.music-title{
+    color: rgb(3, 3, 3);
+    font-family: 'Quicksand';
+}
+
 .jazz-recording{
     margin: 20px;
 }

@@ -27,20 +27,27 @@ var footer =
         '</a>'+
     '</div>'+
     '<div class="flex">'+
-        '<a href="https://play.google.com/store/apps/developer?id=Sebastian+Park" target="_blank">'+
-            '<i class="fab fa-google-play"></i>'+
+        '<a href="https://github.com/Seb-Park" target="_blank">'+
+            '<i class="fab fa-linkedin"></i>'+
         '</a>'+
-    '</div>'+
+'   </div>'+
+    // '<div class="flex">'+
+    //     '<a href="https://play.google.com/store/apps/developer?id=Sebastian+Park" target="_blank">'+
+    //         '<i class="fab fa-google-play"></i>'+
+    //     '</a>'+
+    // '</div>'+
     '<div class="flex">'+
         '<a href="http://sebastian-park.netlify.com/images/resume.pdf" target="_blank">'+
-            '<i class="far fa-file-pdf"></i>'+
+            '<i class="far fa-file-alt"></i>'+
             '<!--far fa-file-alt or fa-file-pdf-->'+
         '</a>'+
-    '</div>'+
-    '<div class="flex">'+
-        '<a href="https://devpost.com/Seb-park" target="_blank">'+
-            '<i class="fab fa-dev"></i>'+
-            '</div>';
+    '</div>'
+    // +'<div class="flex">'+
+    //     '<a href="https://devpost.com/Seb-park" target="_blank">'+
+    //         '<i class="fab fa-dev"></i>'+
+    //         '</div>'
+            ;
+            
 document.getElementById("insert-header").innerHTML=header;
 document.getElementById("insert-footer").innerHTML=footer;
 
