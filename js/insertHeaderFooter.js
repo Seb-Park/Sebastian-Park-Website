@@ -27,7 +27,7 @@ var footer =
         '</a>'+
     '</div>'+
     '<div class="flex">'+
-        '<a href="https://github.com/Seb-Park" target="_blank">'+
+        '<a href="https://www.linkedin.com/in/sebastian-park/" target="_blank">'+
             '<i class="fab fa-linkedin"></i>'+
         '</a>'+
 '   </div>'+
@@ -37,7 +37,7 @@ var footer =
     //     '</a>'+
     // '</div>'+
     '<div class="flex">'+
-        '<a href="http://sebastian-park.netlify.com/images/resume.pdf" target="_blank">'+
+        '<a href="/images/resume.pdf" target="_blank">'+
             '<i class="far fa-file-alt"></i>'+
             '<!--far fa-file-alt or fa-file-pdf-->'+
         '</a>'+
