@@ -737,6 +737,10 @@ nav a::before{
         position: absolute;
         top: 7px;
     }
+
+    .fixed-background{
+        background-size: cover;
+    }
   }
 
 subtitle{
