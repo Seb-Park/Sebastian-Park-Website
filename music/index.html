@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
         integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <link rel="stylesheet" type="text/css" href="/css/music.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link rel="shortcut icon" type="image/png" href="/images/sparkSoft2.png" />
 </head>
 
@@ -24,24 +26,25 @@
     <div id="insert-header">
     </div>
     <div class="fixed-background mePiano">
-        <div class="background-blur"></div>
-        <div class="music-page-head">
-            <center><h1>Ya like jazz?</h1></center>
-            <subtitle>If so, you've come to the right place (under construction)!</subtitle>
-        </div>
-        <div class="music-content">
-            <audio src="/audio/FOOTPRINTS.mp3" controls class="jazz-recording" controlsList="nodownload"></audio>
-            <p class="music-title">Footprints - Wayne Shorter</p>
-            <br>
-            <audio src="/audio/IF_I_WERE_A_BELL.mp3" controls class="jazz-recording" controlsList="nodownload"></audio>
-            <p class="music-title">If I Were a Bell - Frank Loesser</p>
+        <div class="music-page-content">
+            <div class="background-blur"></div>
+            <div class="music-page-head">
+                <center>
+                    <h1>Ya like jazz?</h1>
+                </center>
+                <subtitle>If so, you've come to the right place (under construction)!</subtitle>
+            </div>
+            <div class="music-content" id="music-panel">
+            </div>
+            <center><div class="icons-blur"></div></center>
         </div>
     </div>
-    
+
     <div id="insert-footer"></div>
 </body>
 <script src="/js/navigation.js"></script>
 <script src="/js/insertHeaderFooter.js"></script>
 <script src="/js/anim.js"></script>
+<script src="/js/fillMusic.js"></script>
 
 </html>

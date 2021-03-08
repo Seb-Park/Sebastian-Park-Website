@@ -1,0 +1,26 @@
+{
+    "musics": [
+        {
+            "title": "Footprints - Wayne Shorter",
+            "description": "",
+            "details": "",
+            "audio": "/audio/FOOTPRINTS.mp3",
+            "video": "",
+            "youtube": ""
+        },
+        {
+            "title": "If I Were a Bell - Frank Loesser",
+            "description": "",
+            "details": "",
+            "audio": "/audio/IF_I_WERE_A_BELL.mp3",
+            "video": "",
+            "youtube": ""
+        },
+        {
+            "title": "Octet - Make Me Cry",
+            "description": "",
+            "details": "",
+            "youtube": "https://www.youtube.com/embed/P24TsJlpVqk"
+        }
+    ]
+}
