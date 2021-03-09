@@ -1,4 +1,14 @@
 var updates;
+var musicBG = document.getElementById("music-bg");
+var yaLikeJazz = document.getElementById("music-header");
+musicBG.onscroll = function () {
+    if(musicBG.scrollTop>75){
+        yaLikeJazz.style.opacity = 0;
+    }
+    else{
+        yaLikeJazz.style.opacity = 1;
+    }
+};
 
 //using jquery fill the updates object with the updates.json updates array.
 $.getJSON("music.json", function (json) {

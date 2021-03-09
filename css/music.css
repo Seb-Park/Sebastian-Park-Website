@@ -13,6 +13,10 @@
     min-width: 560px;
 }
 
+#music-header{
+    transition:all ease-in-out .5s;
+}
+
 .icons-blur{
     background: linear-gradient(transparent, white);
     height: 100px;
