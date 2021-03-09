@@ -1,12 +1,15 @@
 var updates;
 var musicBG = document.getElementById("music-bg");
 var yaLikeJazz = document.getElementById("music-header");
+var bgBlur = document.getElementsByClassName("background-blur")[0];
 musicBG.onscroll = function () {
     if(musicBG.scrollTop>75){
         yaLikeJazz.style.opacity = 0;
+        bgBlur.style.opacity = 1;
     }
     else{
         yaLikeJazz.style.opacity = 1;
+        bgBlur.style.opacity = 0.7;
     }
 };
 
